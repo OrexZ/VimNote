@@ -42,4 +42,17 @@
     nmap <C-K> <C-W>k
 
 
+## vim同时搜索多个关键字
+
+以‘或’的形式，同时搜索多个关键字：
+
+    /\vword01|word02
+    /word01\|word02
+
+
+以‘与’的形式，同时搜索多个关键字：(使用类似perl形式的正则表达式)
+
+    /\vword01(some pattern)word02
+
+
 
