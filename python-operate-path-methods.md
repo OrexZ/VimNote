@@ -80,7 +80,7 @@ filename:[sys.path[0]] > /home/rex/C_LD/common_Makefile/scirpts
 
 一般获得当前模块或者你称之为脚本文件的绝对路径，使用:
 
-    os.path.dirname(os.path.realpath(\_\_file\_\_))
+    os.path.dirname(os.path.realpath(__file__))
 
 看到了说出应该差不多就明白了，不过具体的细节请查看[官方文档][1]。
 当然看看源码也是有好处的，如果你有时间的话。
@@ -101,5 +101,5 @@ filename:[sys.path[0]] > /home/rex/C_LD/common_Makefile/scirpts
 加上适当的`os.path`模块中的处理函数，来满足你的要求。
 
 
-[1]: https://docs.python.org/3.8/library/os.path.htm
+[1]: https://docs.python.org/3.8/library/os.path.html
 
