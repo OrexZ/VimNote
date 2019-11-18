@@ -1,13 +1,17 @@
 
 # 使用find命令
 
+find命令是查找文件的好帮手，请不要光依靠grep来搜索大量文件，
+当文件不多时，grep可以快速的满足要求，这个快速是相对的，也就是人可以接受的范围
+而当文件很多的时候，请使用find,xargs,grep三兄弟完成高效的文件查找与字符过滤。
 
 ## 帮助文档
 
     man find # info find
 
 
----
+-----
+
 
 ## 使用案例
 
@@ -72,10 +76,9 @@ NOTE: -exec 只能接受一条指令
 
     find . -name *.c # --> find . -name a.c b.c c.c d.c --> error
 
-因此，正确的做法是，不用shell来扩展，而让find命令自行完成\*操作。
+因此，正确的做法是，不用shell来扩展，而让find命令自行完成\*字符解析。
 
     find . -name \*.c
     find . -name "*.c"
-
 
 
