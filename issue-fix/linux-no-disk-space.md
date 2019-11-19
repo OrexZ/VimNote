@@ -28,3 +28,20 @@
     sync && reboot (sudoer)
 
 
+NOTE: 不过一般不建议直接删除掉log文件或者较大的文件，至少应该知道是什么原因引起的问题。
+
+笔者蹦到的问题是dockerd不断喂log给syslogd，导致log文件过大。
+
+可以使用tail -f /var/log/syslog 看到到底谁在不断的扩大log，找到元凶才是正道。
+
+由于笔者使用snap和apt都安装过docker，出现了一些奇怪的问题，所以需要snap和apt都删除掉docker，然后下载干净的docker方可。
+
+
+---
+
+关于如何关闭并移除Docker的讨论：
+
+StackOverflow的一些回答
+https://stackoverflow.com/questions/40192415/how-permanently-kill-dockerd
+AskUbuntu的回答
+https://askubuntu.com/questions/935569/how-to-completely-uninstall-docker
