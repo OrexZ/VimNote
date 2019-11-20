@@ -127,7 +127,7 @@ grep输出的shell状态码：
 
 > --exclude=GLOB
 
-忽略文件名称（不加目录也叫basename）能被GLOB匹配到的文件。GLOB通配符包括："*"、"?"和"[...]"。
+忽略文件名称（不加目录也叫basename）能被GLOB匹配到的文件。GLOB通配符包括："\*"、"?"和"[...]"。
 
 > --exclude-from=FILE
 
