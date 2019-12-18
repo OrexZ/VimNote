@@ -43,3 +43,27 @@
 
 [1]: https://www.tecmint.com/set-hostname-permanently-in-linux/
 
+
+## 如何为单台主机添加多个hostname
+
+这个需求一般不会存在，不过有时候公司的服务器默认是有命名规则的，所以如果你想要按照自己的想法来设计服务器的hostname，
+这个时候就需要按照下面这样操作
+
+其实也比较简单，需要注意的是/etc/hostname只能有一个名字生效，这里面不需要你进行更改，这是'主名字',
+那么我们修改的是 /etc/hosts，本质上是添加该服务器的alias名字，就是别名。
+
+    # step 1 : get your ip address
+    $ ifconfig
+
+    # step 2 : modify host name alias
+    #/etc/hosts
+    >
+    HOST_IP NAME_1 NAME_2
+
+
+具体内容请参考[这里][2]的解释与[这里][3]的回答
+
+[2]: //www.unix.com/solaris/93371-assigning-two-hostname-single-server.html
+[3]: https://serverfault.com/questions/155793/may-i-set-multiple-names-in-etc-hostname
+
+
