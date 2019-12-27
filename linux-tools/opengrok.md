@@ -19,7 +19,7 @@
 
 ```text
 <EXTERNAL PORT>: 主机端口，由docker中端口8080映射过来，并给外部使用的
-<LINUX JDK HOME>: JDK的HOME目录，一般在/lib/下面，可以使用locate定位
+<LINUX JDK HOME>: JDK的HOME目录，一般在/usr/lib/下面，可以使用locate定位
 <OPENGROK DATA FOLDER>: 索引文件和项目代码存放的位置
 ```
 
