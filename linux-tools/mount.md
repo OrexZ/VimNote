@@ -7,7 +7,6 @@
 
     man mount # info mount
 
------
 
 ## 常用方法
 

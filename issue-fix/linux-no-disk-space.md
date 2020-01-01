@@ -37,8 +37,6 @@ NOTE: 不过一般不建议直接删除掉log文件或者较大的文件，至�
 由于笔者使用snap和apt都安装过docker，出现了一些奇怪的问题，所以需要snap和apt都删除掉docker，然后下载干净的docker方可。
 
 
----
-
 关于如何关闭并移除Docker的讨论：
 
 StackOverflow的一些回答

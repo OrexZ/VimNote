@@ -10,7 +10,6 @@ find命令是查找文件的好帮手，请不要光依靠grep来搜索大量文
     man find # info find
 
 
------
 
 
 ## 使用案例
