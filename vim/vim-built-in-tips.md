@@ -46,5 +46,22 @@ NOTE: <C-V>可以打印不可见字符。
     :w
 
 
+## 如何利用vim保存文件为不同格式？
+
+使用vim编辑器，需要知道的一点是，如何格式化自己的文件
+
+其实很简单，这里介绍不改变vim配置的情况下，修改当前文件的编码格式并保存
+
+    1. > set fileencoding=utf-8 #修改当前文件的编码格式
+    2. > wq
+
+如何要配置全局生效的文件，并打算去除编码格式带来的乱码，可以这样
+
+    # in vimrc
+    set fileencoding=utf-8,gbk,...
 
 
+还有一些小技巧，可以参考[这里][1]
+
+
+[1]: https://blog.csdn.net/mergerly/article/details/50899575
