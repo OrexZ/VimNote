@@ -1,3 +1,9 @@
+---
+title: fzf工具的安装
+toc: true
+date: 2019-01-10 20:24:25
+categories: fzf
+---
 
 
 ## 如何安装FZF
