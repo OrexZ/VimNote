@@ -122,6 +122,7 @@ ibus引擎配合googlepingyin来完成中文的书写
 - http://www.kbase101.com/question/19486.html
 - https://invisible-island.net/xterm/manpage/xterm-contents.html < xterm常用函数解释
 - https://unix.stackexchange.com/questions/109509/how-to-search-xterm-console-history
+- [how to enable xterm-256-color](https://blog.csdn.net/origin_lee/article/details/39141769)
 
 
 [1]: https://blog.csdn.net/diy534/article/details/7327213
